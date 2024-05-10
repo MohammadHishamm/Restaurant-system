@@ -8,15 +8,19 @@ namespace program
 {
     internal class Waiter
     {
+        private List<Order> orders;
 
-        public void TakeOrder()
+        public Waiter()
         {
-
+            orders = new List<Order>();
         }
 
-        public void ViewReservedTables()
+        public void CreateOrder(Order order)
         {
-
+            orders.Add(order);
+            Console.WriteLine($"New order created. Order ID: {order.OrderID}");
         }
+
+     
     }
 }
