@@ -32,10 +32,16 @@ namespace MyApp
             MenuItem item2 = new MenuItem(2, "item2", "testest", 150);
             MenuItem item3 = new MenuItem(3, "item3", "testest", 520);
             Menu menu = new Menu(1);
-            menu.AddMenuItem(item1);
-            menu.AddMenuItem(item2);
-            menu.AddMenuItem(item3);
-            menu.ViewMenu();
+            Menu menu2 = new Menu(2);
+            Manager manager = new Manager();    
+            manager.AddMenuItemToMenu(menu,item1);
+            manager.AddMenuItemToMenu(menu, item2);
+            manager.AddMenuItemToMenu(menu2, item3);
+            manager.ViewMenus();
+
+           
+
+
 
 
 
